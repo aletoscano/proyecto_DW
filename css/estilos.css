@@ -168,15 +168,18 @@ section{
   font-size: 40px;
   font-family: 'Koulen',cursive;
   text-shadow: 0px 10px 10px #777777;
+<<<<<<< HEAD
   animation-duration: 2s;
   animation-name:flip;
   animation-iteration-count:infinite;
+=======
+>>>>>>> origin/master
 }
 .item1 h3{
   font-size: 14px;
+
 }
  
-
 
 .btn {
   width: 200px;
@@ -267,6 +270,8 @@ section{
 }
 .go_to a{
   text-decoration: none;
+
+
 }
 
 
