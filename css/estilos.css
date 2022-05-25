@@ -1,0 +1,554 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+/* aplica a todo  */
+body{
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  background-blend-mode: normal, lighten, soft-light;
+  min-height: 100vh;
+  
+
+}
+/* header css contiene redes, logo, menu*/
+header{
+  display:grid;
+  height: 80px;
+  width: 100%;
+  background-color:rgba(146, 158, 172, 0.4);
+  font-size: 25px;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-content: space-between;
+  align-content: center;
+
+
+
+}
+
+.redes{
+  padding-right:30px;
+  text-align: right;
+
+}
+.redes i{
+  color:white;
+  font-size:22px;
+  letter-spacing: 10px;
+
+}
+
+.redes i:hover{ 
+  color:black;
+  transition: all 0.9s;
+
+}
+
+.luke_logo {
+  text-align: center;
+}
+
+.nav1 {
+  text-align: left;
+  padding-left:30px;
+
+}
+
+
+
+.nav1 ul li{ 
+  list-style: none;
+  display: inline-block;
+  margin:0px 5px;
+}
+  
+.nav1 a{ 
+  text-decoration: none;
+  color: white;
+  font-size:14px;
+  font-family: Helvetica, sans-serif;
+
+}
+
+.nav1 a:hover{ 
+  color:black;
+  transition: all 0.9s;
+
+}
+
+
+/* fin header */
+ 
+/* principio main */
+main{
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+
+
+}
+
+/* para los titulos de cada seccion */
+.page_title {
+  font-size: 300%;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+/* flechita para moverse hacia el principio */
+
+.up{
+  height: 50px;
+  width: 50px;
+  position:fixed;
+  bottom:40px;
+  right:40px;
+  text-align: center; 
+  line-height: 50px;
+  font-size: 40px;
+  color:white
+}
+
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* primera seccion: container que contiene info album */
+
+
+.container{ 
+  display:grid;
+  min-height: 400px;
+  width: 90%;
+  margin: auto;
+  background: rgba(220, 20, 60,0.2);
+  border: 1px solid white;
+  border-radius: 80px 50px; 
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-evenly;
+  align-items: center;
+  
+
+
+}
+
+
+.caja{
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  min-height: 350px;
+  width: auto;
+  text-align: center;
+
+
+}
+
+
+.item1 {
+  line-height: 100px;
+  justify-content: center;
+  align-content: center;
+
+}
+ 
+.item1 h2{
+  font-size: 40px;
+  font-family: 'Koulen',cursive;
+  text-shadow: 0px 10px 10px #777777;
+
+}
+.item1 h3{
+  font-size: 14px;
+}
+ 
+
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family:"Poppins", sans-serif;
+  background-color: rgb(210, 233, 247);
+  box-shadow: 0px 10px 10px #777777;
+  border: 0px solid white;
+  font-size: 100%;
+  text-transform: uppercase;
+
+  
+
+
+}
+.btn:hover {
+  background-color: white;
+  transition: all 0.9s;
+
+}
+
+
+
+.item2{
+  background-image: url(../images/luke_new_album.png);
+  background-size:cover;
+  background-position:center;
+  opacity: 0.7;
+  border-radius: 80px 50px;
+  filter:grayscale(0%);
+
+}
+
+.item2:hover{
+  filter:grayscale(100%);
+  transition: all 0.9s;
+
+}
+
+
+.item3{
+  text-align: justify;
+  padding:10px;
+}
+
+.item4{
+  background-image: url(../images/luke_home.png);
+  background-size:cover ;
+  background-position:center;
+  opacity: 0.7;
+  border-radius: 80px 50px;
+  filter:grayscale(0%);
+}
+
+.item4:hover{
+  filter:grayscale(100%);
+  transition: all 0.9s;
+
+}
+
+
+
+
+ 
+/* seccion 2 */
+#sec2{
+  background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+  color:black;
+
+}
+
+.shows{
+  text-align: center;
+  font-size: 40px;
+}
+
+.go_to{
+  padding-top: 20px;
+  text-align:right;
+  padding-right: 20px;
+  font-size: 20px;
+
+}
+.go_to a{
+  text-decoration: none;
+}
+
+
+.go_to:hover{ 
+  text-decoration: underline;
+  transition: all 0.9s;
+
+}
+
+/* seccion 3 */
+
+#sec3{
+  color:white;
+}
+
+
+.container_2{ 
+  display:grid;
+  min-height: 400px;
+  width: 90%;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 80px 50px; 
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas: "img1 img2";
+  background: rgba(220, 20, 60,0.2);
+
+
+}
+
+
+
+.player {
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  height: 350px;
+  width: 500px;
+}
+
+
+/* footer */
+
+
+ 
+footer{
+  min-height: 70px;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size:15px;
+  padding-top:10px;
+
+
+}
+
+
+footer i{
+  color:white;
+  font-size:40px;
+  letter-spacing: 20px;
+  padding-bottom: 10px;
+
+}
+
+ 
+.nav2{
+  padding-top: 10px;
+  background-color: black;
+  padding-bottom: 10px;
+
+}
+
+.nav2 ul li{ 
+  list-style: none;
+  display: inline-block;
+  margin:0px 8px;
+}
+  
+.nav2 a{ 
+  text-decoration: none;
+  color: white;
+  font-size:14px;
+  font-family: Helvetica, sans-serif;
+
+}
+
+.nav2 a:hover{ 
+  text-decoration:underline;
+}
+
+
+
+.container_3{ 
+  display:grid;
+  min-height: 400px;
+  width: 100%;
+  grid-template-columns: repeat(3,1fr);
+
+
+
+}
+
+
+
+.container_4{ 
+  display:grid;
+  min-height: 400px;
+  width: 100%;
+  grid-template-columns: repeat(2,1fr);
+
+
+
+}
+
+.video{
+  display:grid;
+  justify-content: space-evenly;
+  height: 500px;
+  width: auto;
+  align-items: center;
+ 
+}
+
+.video iframe{
+  width: 400px;
+  height: 400px;
+}
+
+
+.form_group{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 140%;
+}
+input[type="email"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 140%;
+  padding: 10px 10px;
+}
+input[type="number"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 140%;
+  padding: 10px 10px;
+}
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 140%;
+  padding: 10px 10px;
+}
+select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 140%;
+  padding: 10px 10px;
+}
+ 
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border:none;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 20px 20px;
+  display:none;
+
+}
+
+
+@media only screen and (min-width:0px) and (max-width:599px){
+  .container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr); 
+
+  }
+  .item2{
+    grid-row:2;
+  }
+
+
+
+  .container_2{
+    display:grid;
+    grid-template-columns: repeat(1,1fr); 
+
+  }
+  .item3{
+    padding-top:50px;
+  }
+
+  .item4{
+    grid-row:2;
+  }
+
+
+  .container_3{
+    display:grid;
+    grid-template-columns: repeat(1,1fr); 
+
+  }
+
+  .container_4{
+    display:grid;
+    grid-template-columns: repeat(1,1fr); 
+
+  }
+
+  header{
+    display:grid;
+    height: 80px;
+    width: 100%;
+    font-size: 25px;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+  
+  
+  
+  }
+  
+  .redes{
+    padding-right:30px;
+    text-align: right;
+    display:none;
+  
+  }
+
+  
+  .luke_logo {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  
+  .nav1 {
+    text-align: left;
+    padding-left:30px;
+  }
+  
+  
+  
+  .nav1 ul li{ 
+    list-style: none;
+    display: inline-block;
+    margin:0px 5px;
+  }
+    
+  .nav1 a{ 
+    text-decoration: none;
+    color: white;
+    font-size:10px;
+    font-family: Helvetica, sans-serif;
+  
+  }
+  
+  .nav1 a:hover{ 
+    color:black;
+    transition: all 0.9s;
+  
+  }
+
+  .nav-toggle {
+    color: white;
+    background: none;
+    border:none;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 20px 20px;
+    display:;
+  }
+
+  
+
+}
